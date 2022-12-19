@@ -1,0 +1,34 @@
+.advances {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.advances__list {
+  display: flex;
+  gap: 30px;
+}
+
+.advances__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+
+  margin-bottom: 30px;
+
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+.advances__subtitle {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.advances__text {
+  font-size: 14px;
+  line-height: 1.71;
+}

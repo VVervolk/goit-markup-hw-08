@@ -1,0 +1,26 @@
+.logo {
+  color: var(--focus-color);
+
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.page-header__logo {
+  @media screen and (min-width: 768px) {
+    margin-right: 93px;
+  }
+}
+
+.logo__header-part {
+  color: #000;
+}
+
+.page-footer__logo {
+  display: block;
+  margin-bottom: 20px;
+}
+.logo__footer-part {
+  color: #fff;
+}

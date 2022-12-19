@@ -1,0 +1,107 @@
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: #2f303a;
+}
+
+.page-footer__flex-box {
+  display: flex;
+  align-items: center;
+  gap: 92px;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.address__street {
+  color: #fff;
+}
+
+.address__contacts {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.page-footer__subtitle {
+  display: block;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: #fff;
+}
+
+.links {
+  display: flex;
+  gap: 10px;
+}
+
+.links__item {
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--focus-color);
+  }
+}
+
+.links__icon {
+  width: 20px;
+  height: 20px;
+  object-position: center;
+
+  fill: #fff;
+}
+
+.page-footer__input-pos {
+  display: flex;
+  gap: 12px;
+}
+
+.page-footer__input {
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+
+  color: #fff;
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    outline: var(--focus-color) solid 1px;
+    border: inherit;
+  }
+}
+
+.page-footer__button {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  padding-left: 28px;
+  text-align: left;
+}
+
+.button__icon {
+  position: absolute;
+  top: 13px;
+  right: 28px;
+}
