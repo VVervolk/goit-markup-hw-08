@@ -26,7 +26,7 @@
           >
           <button
             type="button"
-            class="menu-button js-open-menu"
+            class="menu-button__burger js-open-menu"
             aria-expanded="false"
             aria-controls="mobile-menu"
           >
@@ -66,7 +66,7 @@
         </ul>
       </div>
     </header>
-    <div style="display: none">
+    <div style="display: none" class="hidden">
       <main>
         <!-- Hero -->
         <section class="hero">
@@ -536,7 +536,8 @@
           <use href="./images/icons.svg#icon-vector"></use>
         </svg>
       </button>
-      <ul class="mobile-menu__links-list">
+      <!-- Список меню -->
+      <ul class="mobile-menu__list">
         <li>
           <a class="mobile-menu__link mobile-menu__link--active" href="./index.html">Студія</a>
         </li>
@@ -547,6 +548,7 @@
           <a class="mobile-menu__link" href="">Контакти</a>
         </li>
       </ul>
+      <!-- Контакты -->
       <ul class="mobile-menu__contacts-list">
         <li>
           <a class="mobile-menu__number" href="tel:+380961111111"> +38 096 111 11 11 </a>
@@ -555,11 +557,23 @@
           <a class="mobile-menu__mail" href="mailto:info@devstudio.com"> info@devstudio.com </a>
         </li>
       </ul>
-      <ul class="social-links">
-        <li><a class="social-links__item" href="#">Instagram</a></li>
-        <li><a class="social-links__item" href="#"></a>Twitter</li>
-        <li><a class="social-links__item" href="#"></a>Facebook</li>
-        <li><a class="social-links__item" href="#"></a>LinkedIn</li>
+      <!-- Социальные сети -->
+      <ul class="socials">
+        <li class="socials__item">
+          <a class="social__links" href="#">Instagram</a>
+          <span class="socials__stick">|</span>
+        </li>
+        <li class="socials__item">
+          <a class="social__links" href="#">Twitter</a>
+          <span class="socials__stick">|</span>
+        </li>
+        <li class="socials__item">
+          <a class="social__links" href="#">Facebook</a>
+          <span class="socials__stick">|</span>
+        </li>
+        <li class="socials__item">
+          <a class="social__links" href="#">LinkedIn</a>
+        </li>
       </ul>
     </div>
     <script src="./js/modal.js"></script>

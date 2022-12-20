@@ -2,8 +2,10 @@
   position: absolute;
   top: 0;
   left: 0;
+
   width: 100vw;
-  height: auto;
+  max-width: 468px;
+  height: 100vh;
   padding: 48px 15px 46px 40px;
 
   background-color: #fff;
@@ -24,7 +26,8 @@
   right: 15px;
 }
 
-.mobile-menu__links-list {
+// Список меню
+.mobile-menu__list {
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -43,6 +46,7 @@
   color: var(--focus-color);
 }
 
+// Контакты
 .mobile-menu__contacts-list {
   display: flex;
   flex-direction: column;
@@ -65,16 +69,27 @@
   letter-spacing: 0.02em;
 }
 
-.social-links {
+// Социальные сети
+.socials {
   display: flex;
   justify-content: flex-start;
-  gap: 20px;
+  gap: 10px;
 }
 
-.social-links__item {
+.socials__item {
+  display: flex;
+  align-items: center;
+}
+
+.social__links {
   color: var(--focus-color);
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22px;
   letter-spacing: 0.02em;
+}
+
+.socials__stick {
+  margin-left: 10px;
+  color: rgba(33, 33, 33, 0.2);
 }
