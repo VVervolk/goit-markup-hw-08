@@ -1,25 +1,40 @@
 .members {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   background-color: #f5f4fa;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .members__list {
   display: flex;
   gap: 30px;
+  flex-direction: column;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
 }
 
 .members__card {
+  width: 450px;
   padding-bottom: 30px;
 
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  width: 270px;
+
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
 
 .members__name {
@@ -32,11 +47,12 @@
 
 .contacts-list {
   display: flex;
+  justify-content: center;
   align-items: center;
+  gap: 10px;
   margin-top: 16px;
   padding-right: 32px;
   padding-left: 32px;
-  gap: 10px;
 }
 
 .contacts-list__link {
@@ -45,13 +61,15 @@
   width: 44px;
   height: 44px;
 
-  transition: border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 1200px) {
+    transition: border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover,
-  &:focus {
-    border-radius: 50%;
-    background-color: var(--focus-color);
+    &:hover,
+    &:focus {
+      border-radius: 50%;
+      background-color: var(--focus-color);
+    }
   }
 }
 
@@ -61,10 +79,12 @@
   object-position: 50% 50%;
 
   fill: #afb1b8;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 1200px) {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  .contacts-list__link:hover &,
-  .contacts-list__link:focus & {
-    fill: #fff;
+    .contacts-list__link:hover &,
+    .contacts-list__link:focus & {
+      fill: #fff;
+    }
   }
 }
