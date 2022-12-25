@@ -49,7 +49,7 @@
         <ul class="contacts">
           <li>
             <a class="link contacts__link" href="mailto:info@devstudio.com">
-              <svg class="contacts__icon" width="16" height="12">
+              <svg class="contacts__mail">
                 <use href="./images/icons.svg#icon-mail"></use>
               </svg>
               info@devstudio.com
@@ -57,7 +57,7 @@
           </li>
           <li>
             <a class="link contacts__link" href="tel:+380961111111">
-              <svg class="contacts__icon" width="10" height="16">
+              <svg class="contacts__call">
                 <use href="./images/icons.svg#icon-call"></use>
               </svg>
               +38 096 111 11 11
@@ -69,7 +69,7 @@
     <main>
       <section class="portfolio">
         <div class="container">
-          <h1 hidden>Портфоліо</h1>
+          <h1 class="hidden">Портфоліо</h1>
           <ul class="filter">
             <li>
               <button class="filter__button" type="button">Усі</button>
@@ -95,13 +95,40 @@
                   це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
                   особу.
                 </p>
-                <img src="./images/examle(1).jpg" alt="Веб-сайт на ноубуці" width="370" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/example1/example1-450.jpg    450w,
+                      ./images/example1/example1-450@2x.jpg 900w
+                    "
+                    media="(max-width: 767px)"
+                    sizes="450px"
+                  />
+                  <source
+                    srcset="
+                      ./images/example1/example1-370.jpg    370w,
+                      ./images/example1/example1-370@2x.jpg 740w
+                    "
+                    media="(max-width: 1199px)"
+                    sizes="354px"
+                  />
+                  <source
+                    srcset="
+                      ./images/example1/example1-370.jpg    370w,
+                      ./images/example1/example1-370@2x.jpg 740w
+                    "
+                    media="(min-width: 1200px)"
+                    sizes="370px"
+                  />
+                  <img src="./images/example1/example1-370.jpg" alt="Веб-сайт на ноутбуці" />
+                </picture>
               </div>
               <div class="projects__desc">
                 <h2 class="projects__name">Технокряк</h2>
                 <p class="projects__category">Веб-сайт</p>
               </div>
             </li>
+
             <li class="projects__card">
               <div class="projects__pos">
                 <p class="projects__overlay">
@@ -109,7 +136,33 @@
                   це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
                   особу.
                 </p>
-                <img src="./images/examle(2).jpg" alt="2 баскетболіста" width="370" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/example2/example2-450.jpg    450w,
+                      ./images/example2/example2-450@2x.jpg 900w
+                    "
+                    media="(max-width: 767px)"
+                    sizes="450px"
+                  />
+                  <source
+                    srcset="
+                      ./images/example2/example2-370.jpg    370w,
+                      ./images/example2/example2-370@2x.jpg 740w
+                    "
+                    media="(max-width: 1199px)"
+                    sizes="354px"
+                  />
+                  <source
+                    srcset="
+                      ./images/example2/example2-370.jpg    370w,
+                      ./images/example2/example2-370@2x.jpg 740w
+                    "
+                    media="(min-width: 1200px)"
+                    sizes="370px"
+                  />
+                  <img src="./images/example2/example2-370.jpg" alt="2 баскетболіста" />
+                </picture>
               </div>
               <div class="projects__desc">
                 <h2 class="projects__name">
@@ -118,6 +171,7 @@
                 <p class="projects__category">Дизайн</p>
               </div>
             </li>
+
             <li class="projects__card">
               <div class="projects__pos">
                 <p class="projects__overlay">
@@ -125,13 +179,40 @@
                   це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
                   особу.
                 </p>
-                <img src="./images/examle(3).jpg" alt="Логотип ресторану" width="370" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/example3/example3-450.jpg    450w,
+                      ./images/example3/example3-450@2x.jpg 900w
+                    "
+                    media="(max-width: 767px)"
+                    sizes="450px"
+                  />
+                  <source
+                    srcset="
+                      ./images/example3/example3-370.jpg    370w,
+                      ./images/example3/example3-370@2x.jpg 740w
+                    "
+                    media="(max-width: 1199px)"
+                    sizes="354px"
+                  />
+                  <source
+                    srcset="
+                      ./images/example3/example3-370.jpg    370w,
+                      ./images/example3/example3-370@2x.jpg 740w
+                    "
+                    media="(min-width: 1200px)"
+                    sizes="370px"
+                  />
+                  <img src="./images/example3/example3-370.jpg" alt="Логотип ресторану" />
+                </picture>
               </div>
               <div class="projects__desc">
                 <h2 class="projects__name">Ресторан <span lang="en">Seafood</span></h2>
                 <p class="projects__category">Додаток</p>
               </div>
             </li>
+
             <li class="projects__card">
               <div class="projects__pos">
                 <p class="projects__overlay">
@@ -139,13 +220,40 @@
                   це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
                   особу.
                 </p>
-                <img src="./images/examle(4).jpg" alt="Навушники" width="370" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/example4/example4-450.jpg    450w,
+                      ./images/example4/example4-450@2x.jpg 900w
+                    "
+                    media="(max-width: 767px)"
+                    sizes="450px"
+                  />
+                  <source
+                    srcset="
+                      ./images/example4/example4-370.jpg    370w,
+                      ./images/example4/example4-370@2x.jpg 740w
+                    "
+                    media="(max-width: 1199px)"
+                    sizes="354px"
+                  />
+                  <source
+                    srcset="
+                      ./images/example4/example4-370.jpg    370w,
+                      ./images/example4/example4-370@2x.jpg 740w
+                    "
+                    media="(min-width: 1200px)"
+                    sizes="370px"
+                  />
+                  <img src="./images/example4/example4-370.jpg" alt="Навушники" />
+                </picture>
               </div>
               <div class="projects__desc">
                 <h2 class="projects__name">Проєкт <span lang="en">Prime</span></h2>
                 <p class="projects__category">Маркетинг</p>
               </div>
             </li>
+
             <li class="projects__card">
               <div class="projects__pos">
                 <p class="projects__overlay">
@@ -153,13 +261,40 @@
                   це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
                   особу.
                 </p>
-                <img src="./images/examle(5).jpg" alt="2 коробки" width="370" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/example5/example5-450.jpg    450w,
+                      ./images/example5/example5-450@2x.jpg 900w
+                    "
+                    media="(max-width: 767px)"
+                    sizes="450px"
+                  />
+                  <source
+                    srcset="
+                      ./images/example5/example5-370.jpg    370w,
+                      ./images/example5/example5-370@2x.jpg 740w
+                    "
+                    media="(max-width: 1199px)"
+                    sizes="354px"
+                  />
+                  <source
+                    srcset="
+                      ./images/example5/example5-370.jpg    370w,
+                      ./images/example5/example5-370@2x.jpg 740w
+                    "
+                    media="(min-width: 1200px)"
+                    sizes="370px"
+                  />
+                  <img src="./images/example5/example5-370.jpg" alt="2 коробки" />
+                </picture>
               </div>
               <div class="projects__desc">
                 <h2 class="projects__name">Проєкт <span lang="en">Boxes</span></h2>
                 <p class="projects__category">Додаток</p>
               </div>
             </li>
+
             <li class="projects__card">
               <div class="projects__pos">
                 <p class="projects__overlay">
@@ -167,13 +302,40 @@
                   це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
                   особу.
                 </p>
-                <img src="./images/examle(6).jpg" alt="Веб-сайт на моніторі" width="370" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/example6/example6-450.jpg    450w,
+                      ./images/example6/example6-450@2x.jpg 900w
+                    "
+                    media="(max-width: 767px)"
+                    sizes="450px"
+                  />
+                  <source
+                    srcset="
+                      ./images/example6/example6-370.jpg    370w,
+                      ./images/example6/example6-370@2x.jpg 740w
+                    "
+                    media="(max-width: 1199px)"
+                    sizes="354px"
+                  />
+                  <source
+                    srcset="
+                      ./images/example6/example6-370.jpg    370w,
+                      ./images/example6/example6-370@2x.jpg 740w
+                    "
+                    media="(min-width: 1200px)"
+                    sizes="370px"
+                  />
+                  <img src="./images/example6/example6-370.jpg" alt="Веб-сайт на моніторі" />
+                </picture>
               </div>
               <div class="projects__desc">
                 <h2 lang="en" class="projects__name">Inspiration has no Borders</h2>
                 <p class="projects__category">Веб-сайт</p>
               </div>
             </li>
+
             <li class="projects__card">
               <div class="projects__pos">
                 <p class="projects__overlay">
@@ -181,13 +343,40 @@
                   це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
                   особу.
                 </p>
-                <img src="./images/examle(7).jpg" alt="Журнал" width="370" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/example7/example7-450.jpg    450w,
+                      ./images/example7/example7-450@2x.jpg 900w
+                    "
+                    media="(max-width: 767px)"
+                    sizes="450px"
+                  />
+                  <source
+                    srcset="
+                      ./images/example7/example7-370.jpg    370w,
+                      ./images/example7/example7-370@2x.jpg 740w
+                    "
+                    media="(max-width: 1199px)"
+                    sizes="354px"
+                  />
+                  <source
+                    srcset="
+                      ./images/example7/example7-370.jpg    370w,
+                      ./images/example7/example7-370@2x.jpg 740w
+                    "
+                    media="(min-width: 1200px)"
+                    sizes="370px"
+                  />
+                  <img src="./images/example7/example7-370.jpg" alt="Журнал" />
+                </picture>
               </div>
               <div class="projects__desc">
                 <h2 class="projects__name">Видання <span lang="en">Limited Edition</span></h2>
                 <p class="projects__category">Дизайн</p>
               </div>
             </li>
+
             <li class="projects__card">
               <div class="projects__pos">
                 <p class="projects__overlay">
@@ -195,13 +384,40 @@
                   це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
                   особу.
                 </p>
-                <img src="./images/examle(8).jpg" alt="Етикетка" width="370" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/example8/example8-450.jpg    450w,
+                      ./images/example8/example8-450@2x.jpg 900w
+                    "
+                    media="(max-width: 767px)"
+                    sizes="450px"
+                  />
+                  <source
+                    srcset="
+                      ./images/example8/example8-370.jpg    370w,
+                      ./images/example8/example8-370@2x.jpg 740w
+                    "
+                    media="(max-width: 1199px)"
+                    sizes="354px"
+                  />
+                  <source
+                    srcset="
+                      ./images/example8/example8-370.jpg    370w,
+                      ./images/example8/example8-370@2x.jpg 740w
+                    "
+                    media="(min-width: 1200px)"
+                    sizes="370px"
+                  />
+                  <img src="./images/example8/example8-370.jpg" alt="Етикетка" />
+                </picture>
               </div>
               <div class="projects__desc">
                 <h2 class="projects__name">Проєкт <span lang="en">LAB</span></h2>
                 <p class="projects__category">Маркетинг</p>
               </div>
             </li>
+
             <li class="projects__card">
               <div class="projects__pos">
                 <p class="projects__overlay">
@@ -209,11 +425,36 @@
                   це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
                   особу.
                 </p>
-                <img
-                  src="./images/examle(9).jpg"
-                  alt="Чоловічі руки печатають на ноутбуці"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/example9/example9-450.jpg    450w,
+                      ./images/example9/example9-450@2x.jpg 900w
+                    "
+                    media="(max-width: 767px)"
+                    sizes="450px"
+                  />
+                  <source
+                    srcset="
+                      ./images/example9/example9-370.jpg    370w,
+                      ./images/example9/example9-370@2x.jpg 740w
+                    "
+                    media="(max-width: 1199px)"
+                    sizes="354px"
+                  />
+                  <source
+                    srcset="
+                      ./images/example9/example9-370.jpg    370w,
+                      ./images/example9/example9-370@2x.jpg 740w
+                    "
+                    media="(min-width: 1200px)"
+                    sizes="370px"
+                  />
+                  <img
+                    src="./images/example9/example9-370.jpg"
+                    alt="Чоловічі руки печатають на ноутбуці"
+                  />
+                </picture>
               </div>
               <div class="projects__desc">
                 <h2 lang="en" class="projects__name">Growing Business</h2>
@@ -226,7 +467,7 @@
     </main>
     <footer class="page-footer">
       <div class="container page-footer__flex-box">
-        <div>
+        <div class="page-footer__address">
           <a class="logo page-footer__logo" href="./index.html"
             >Web<span class="logo__footer-part">Studio</span></a
           >
@@ -281,27 +522,26 @@
           </ul>
         </div>
         <div>
-          <form>
+          <form class="page-footer__form">
             <label for="email" class="page-footer__subtitle">Підпишіться на розсилку</label>
-            <div class="page-footer__input-pos">
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="E-mail"
-                class="page-footer__input"
-              />
-              <button type="submit" class="button page-footer__button">
-                Підписатися
-                <svg width="24px" height="24px" class="button__icon">
-                  <use href="./images/icons.svg#icon-subscribe"></use>
-                </svg>
-              </button>
-            </div>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+              class="page-footer__input"
+            />
+            <button type="submit" class="button page-footer__button">
+              Підписатися
+              <svg width="24px" height="24px" class="button__icon">
+                <use href="./images/icons.svg#icon-subscribe"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
     </footer>
+    >
     <!-- Мобильное меню -->
     <div class="mobile-menu js-menu-container">
       <button type="button" class="menu-button__close-button js-close-menu">
@@ -349,5 +589,6 @@
         </li>
       </ul>
     </div>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -2,6 +2,10 @@
   padding-top: 16px;
   padding-bottom: 16px;
   border-bottom: 1px solid #eeeeee;
+
+  @media screen and (min-width: 768px) {
+    padding: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -86,9 +90,19 @@
 /* Header-Контакты */
 .contacts {
   display: none;
-  // display: flex;
-  margin-left: auto;
-  gap: 40px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    margin-left: auto;
+    gap: 40px;
+  }
 }
 
 .contacts__link {
@@ -96,9 +110,14 @@
   align-items: center;
 
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .contacts__icon {
@@ -110,5 +129,26 @@
   .contacts__link:hover &,
   .contacts__link:focus & {
     fill: var(--focus-color);
+  }
+}
+
+.contacts__mail {
+  @extend .contacts__icon;
+  width: 14px;
+  height: 10px;
+
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+.contacts__call {
+  @extend .contacts__icon;
+  width: 10px;
+  height: 14px;
+
+  @media screen and (min-width: 1200px) {
+    height: 16px;
   }
 }

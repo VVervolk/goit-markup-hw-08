@@ -11,7 +11,6 @@
 .clients__list {
   display: flex;
   flex-wrap: wrap;
-  width: 480px;
   gap: 30px;
 
   @media screen and (min-width: 1200px) {
@@ -27,14 +26,20 @@
   border: 1px solid var(--inactive-color);
   border-radius: 4px;
 
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border-color: var(--focus-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+
   @media screen and (min-width: 1200px) {
     width: 170px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-      border-color: var(--focus-color);
-    }
   }
 }
 
@@ -51,12 +56,9 @@
   height: 60px;
 
   fill: var(--inactive-color);
-  @media screen and (min-width: 1200px) {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    .clients__link:hover &,
-    .clients__link:focus & {
-      fill: var(--focus-color);
-    }
+  .clients__link:hover &,
+  .clients__link:focus & {
+    fill: var(--focus-color);
   }
 }
