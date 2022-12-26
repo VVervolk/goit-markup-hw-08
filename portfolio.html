@@ -36,10 +36,12 @@
           </button>
           <ul class="site-nav__list">
             <li>
-              <a class="link site-nav__link site-nav__link--active" href="./index.html">Студія</a>
+              <a class="link site-nav__link" href="./index.html">Студія</a>
             </li>
             <li>
-              <a class="link site-nav__link" href="./portfolio.html">Портфоліо</a>
+              <a class="link site-nav__link site-nav__link--active" href="./portfolio.html"
+                >Портфоліо</a
+              >
             </li>
             <li>
               <a class="link site-nav__link" href="">Контакти</a>
@@ -521,29 +523,31 @@
             </li>
           </ul>
         </div>
-        <div>
-          <form class="page-footer__form">
+        <div class="page-footer__form">
+          <form class="form">
             <label for="email" class="page-footer__subtitle">Підпишіться на розсилку</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="E-mail"
-              class="page-footer__input"
-            />
-            <button type="submit" class="button page-footer__button">
-              Підписатися
-              <svg width="24px" height="24px" class="button__icon">
-                <use href="./images/icons.svg#icon-subscribe"></use>
-              </svg>
-            </button>
+            <div class="form__pos">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-mail"
+                class="form__input"
+              />
+              <button type="submit" class="button form__button">
+                Підписатися
+                <svg width="24px" height="24px" class="button__icon">
+                  <use href="./images/icons.svg#icon-subscribe"></use>
+                </svg>
+              </button>
+            </div>
           </form>
         </div>
       </div>
     </footer>
     >
     <!-- Мобильное меню -->
-    <div class="mobile-menu js-menu-container">
+    <div id="mobile-menu" class="mobile-menu js-menu-container">
       <button type="button" class="menu-button__close-button js-close-menu">
         <svg width="40" height="40">
           <use href="./images/icons.svg#icon-vector"></use>
