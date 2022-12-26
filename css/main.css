@@ -1333,7 +1333,7 @@ img {
 }
 
 .mobile-menu.is-open {
-  height: 100vh;
+  height: 100%;
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
 }
