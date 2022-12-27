@@ -3,6 +3,9 @@
   top: 0;
   left: 0;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
 
   padding: 48px 15px 46px 40px;
@@ -36,7 +39,6 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
-  margin-bottom: 302px;
 }
 
 .mobile-menu__link {
@@ -56,7 +58,6 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
-  margin-bottom: 64px;
 }
 
 .mobile-menu__number {
